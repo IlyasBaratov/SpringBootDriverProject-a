@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Reservations</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg p-3">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">DRYVER</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Reservations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">How It Works</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services & Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+            </ul>
+        </div>
+        <div class="welcome">
+            <span th:text="${#authentication.name}">Ilyas Baratov</span>
+        </div>
+    </div>
+</nav>
+
+<div class="container mt-5">
+    <h3 class="mb-4 text-center">Which <span class="fw-bold">adventure</span> will you choose today?</h3>
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="adventure-card">
+                <img src="round-trip-icon.png" alt="Round Trip">
+                <h4>Round Trip</h4>
+                <p>Pick up & drop off vehicle at the same location.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="adventure-card">
+                <img src="one-way-icon.png" alt="One Way">
+                <h4>One Way</h4>
+                <p>Pick up and drop off vehicle at different locations.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="adventure-card">
+                <img src="airport-dropoff-icon.png" alt="Airport Dropoff">
+                <h4>Airport Dropoff</h4>
+                <p>Drop you off at the airport and return vehicle to your home.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="adventure-card">
+                <img src="airport-pickup-icon.png" alt="Airport Pickup">
+                <h4>Airport Pickup</h4>
+                <p>Pick you up from the airport and take you home.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="adventure-card">
+                <img src="overnighter-icon.png" alt="Overnighter">
+                <h4>Overnighter</h4>
+                <p>Driver travels and stays 1 or more nights with you out of town.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="adventure-card">
+                <img src="other-icon.png" alt="Other">
+                <h4>Other</h4>
+                <p>Let us know what we can do for you.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

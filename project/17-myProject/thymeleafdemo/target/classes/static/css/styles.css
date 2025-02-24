@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #ff7eb9;
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+.navbar .menu a:hover {
+    text-decoration: underline;
+}
+
+main {
+    text-align: center;
+    padding: 50px;
+}
+
+.pricing {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.service-card {
+    background-color: #ffc0cb;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+}
+
+.service-card h2 {
+    color: #ff1493;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.service-card button {
+    background-color: #ff1493;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.service-card button:hover {
+    background-color: #ff69b4;
+}
+
+.cta h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.cta button {
+    background-color: #ff1493;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.cta button:hover {
+    background-color: #ff69b4;
+}
+
+footer {
+    background-color: #ff7eb9;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+.download-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.contact-info p {
+    margin-top: 20px;
+    font-size: 14px;
+}

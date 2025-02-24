@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Success</title>
+    <link rel="stylesheet" href="/css/success.css">
+    <style>
+        .error{
+            color: crimson;
+            font-style: italic;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="success-container">
+    <div class="success-box">
+        <div class="checkmark">
+            <span>&#10004;</span>
+        </div>
+        <h1>Success!</h1>
+        <p>You have successfully registered.</p>
+        <a th:href="@{/home}" class="back-btn">Go to Home</a>
+    </div>
+</div>
+
+
+</body>
+</html>
